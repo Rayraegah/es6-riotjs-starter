@@ -4,8 +4,11 @@
   "description": "A damn simple riotjs starter kit webpack v2 tooling",
   "main": "src/app.js",
   "scripts": {
+    "clean": "shx rm -rf public/build",
     "start": "cross-env NODE_ENV=development webpack-dashboard -- webpack-dev-server --open",
-    "build": "cross-env NODE_ENV=production webpack-dashboard -- webpack -p"
+    "build": "cross-env NODE_ENV=production webpack-dashboard -- webpack -p",
+    "bundle": "npm run clean && npm run build",
+    "prestart": "npm run clean"
   },
   "repository": {
     "type": "git",
