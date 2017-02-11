@@ -11,7 +11,7 @@ const isProd = nodeEnv === 'production';
 
 // with HMR
 let config = {
-    devtool: isProd ? 'hidden-source-map' : 'cheap-eval-source-map',
+    devtool: isProd ? 'cheap-module-source-map' : 'cheap-eval-source-map',
     context: resolve(__dirname, 'src'),
     entry: ['./app.js'],
     output: {
@@ -87,6 +87,7 @@ if (!isProd) {
         hot: true,
         // enable HMR
         contentBase: resolve(__dirname, 'public'),
+        watchContentBase: true,
         // must match the output path
         publicPath: '/build',
         // must match the output
