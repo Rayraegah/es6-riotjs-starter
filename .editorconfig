@@ -1,0 +1,24 @@
+# Editor config for riotjs projects
+# last updated 11/01/2016
+
+# Master config file
+root = true
+
+# Everything
+[*]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Travis configuration
+[.travis.yml]
+indent_style = space
+indent_size = 2
+
+# NPM package and configuration
+[package.json]
+indent_style = space
+indent_size = 2

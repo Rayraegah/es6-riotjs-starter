@@ -1,0 +1,56 @@
+
+body {
+  font-family: -apple-system, sans-serif;
+  font-size: 20px;
+
+  border: 0;
+}
+
+form input {
+  font-size: 85%;
+
+  padding: .4em;
+
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+button {
+  font-size: 75%;
+
+  margin: 0 .23em;
+  padding: .4em 1.2em;
+
+  cursor: pointer;
+
+  color: #fff;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 2em;
+  outline: none;
+  background-color: #1fadc5;
+}
+
+button[disabled] {
+  color: #aaa;
+  background-color: #ddd;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  padding: .2em 0;
+
+  list-style-type: none;
+}
+
+.completed {
+  text-decoration: line-through;
+
+  color: #ccc;
+}
+
+label {
+  cursor: pointer;
+}

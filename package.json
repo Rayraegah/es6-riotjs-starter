@@ -1,0 +1,41 @@
+{
+  "name": "es6-riotjs-starter",
+  "version": "0.0.0-alpha",
+  "description": "A damn simple riotjs starter kit webpack v2 tooling",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack-dashboard -- webpack-dev-server --open",
+    "build": "cross-env NODE_ENV=production webpack-dashboard -- webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rayraegah/es6-riotjs-starter.git"
+  },
+  "keywords": [
+    "riotjs",
+    "webpack2",
+    "riot-starter",
+    "seed",
+    "es6",
+    "javascript"
+  ],
+  "author": "Rayraegah",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015-riot": "^1.1.0",
+    "cross-env": "^3.1.4",
+    "css-loader": "^0.26.1",
+    "file-loader": "^0.10.0",
+    "normalize.css": "^5.0.0",
+    "riot": "^3.2.1",
+    "riotjs-loader": "^4.0.0",
+    "shx": "^0.2.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.1",
+    "webpack-dashboard": "^0.3.0",
+    "webpack-dev-server": "^2.3.0"
+  }
+}
