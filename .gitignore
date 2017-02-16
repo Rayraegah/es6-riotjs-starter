@@ -1,6 +1,4 @@
-node_modules/
-*.log
+node_modules
 .DS_Store
-build/
-bundle.js
-bundle.map.js
+*.log
+dist

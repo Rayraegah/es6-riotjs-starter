@@ -1,0 +1,19 @@
+{
+  "name": "riot-starter",
+  "short_name": "riot",
+  "start_url": "/?homescreen=1",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fafafa",
+  "theme_color": "#fc0e49",
+  "icons": [{
+    "src": "icon/android-chrome-144x144.png",
+    "type": "image/png",
+    "sizes": "144x144"
+  },
+  {
+    "src": "icon/android-chrome-192x192.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }]
+}

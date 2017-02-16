@@ -1,44 +1,46 @@
 {
-  "name": "es6-riotjs-starter",
-  "version": "0.0.0-alpha",
-  "description": "A damn simple riotjs starter kit webpack v2 tooling",
-  "main": "src/app.js",
+  "private": true,
+  "name": "riot-starter",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "rayraegah/riot-starter",
+  "author": {
+    "name": "Severan Rye",
+    "url": "https://rayraegah.github.io"
+  },
   "scripts": {
-    "clean": "shx rm -rf public/build",
-    "start": "cross-env NODE_ENV=development webpack-dashboard -- webpack-dev-server --open",
-    "build": "cross-env NODE_ENV=production webpack-dashboard -- webpack -p",
-    "bundle": "npm run clean && npm run build",
-    "prestart": "npm run clean"
+    "build": "NODE_ENV=production webpack --config config/webpack",
+    "start": "serve dist -s",
+    "watch": "webpack-dashboard -- webpack-dev-server --config config/webpack --open"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Rayraegah/es6-riotjs-starter.git"
+  "dependencies": {
+    "history": "^4.5.1"
   },
-  "keywords": [
-    "riotjs",
-    "webpack2",
-    "riot-starter",
-    "seed",
-    "es6",
-    "javascript"
-  ],
-  "author": "Rayraegah",
-  "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^6.6.1",
+    "babel": "^6.5.2",
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
+    "babel-preset-babili": "0.0.11",
     "babel-preset-es2015-riot": "^1.1.0",
-    "cross-env": "^3.1.4",
+    "babel-preset-stage-2": "^6.22.0",
+    "clean-webpack-plugin": "^0.1.15",
+    "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.26.1",
-    "file-loader": "^0.10.0",
-    "normalize.css": "^5.0.0",
-    "riot": "^3.2.1",
-    "riotjs-loader": "^4.0.0",
-    "shx": "^0.2.2",
+    "extract-text-webpack-plugin": "beta",
+    "html-webpack-plugin": "^2.25.0",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3",
+    "postcss-loader": "^1.2.2",
+    "riot": "^3.0.7",
+    "riot-hot-reload": "^0.0.2",
+    "riot-route": "^3.1.0",
+    "riot-tag-loader": "^1.0.0",
+    "serve": "^3.3.1",
     "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7",
-    "webpack": "^2.2.1",
+    "sw-precache-webpack-plugin": "^0.9.0",
+    "webpack": "^2.2.0",
     "webpack-dashboard": "^0.3.0",
-    "webpack-dev-server": "^2.3.0"
+    "webpack-dev-server": "^2.2.0"
   }
 }
