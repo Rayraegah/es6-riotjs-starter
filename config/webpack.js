@@ -62,6 +62,7 @@ module.exports = {
     historyApiFallback: true,
     compress: isProd,
     inline: !isProd,
-    hot: !isProd
+    hot: !isProd,
+    open: true
   }
 };

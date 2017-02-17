@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "riot-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "repository": "rayraegah/riot-starter",
   "author": {
@@ -9,12 +9,14 @@
     "url": "https://rayraegah.github.io"
   },
   "scripts": {
+    "watch": "webpack-dashboard -- webpack-dev-server --config config/webpack",
     "build": "NODE_ENV=production webpack --config config/webpack",
-    "start": "serve dist -s",
-    "watch": "webpack-dashboard -- webpack-dev-server --config config/webpack --open"
+    "start": "npm run build && npm run serve",
+    "serve": "serve dist -s"
   },
   "dependencies": {
-    "history": "^4.5.1"
+    "history": "^4.5.1",
+    "riot": "^3.0.7"
   },
   "devDependencies": {
     "autoprefixer": "^6.6.1",
@@ -32,7 +34,6 @@
     "less": "^2.7.2",
     "less-loader": "^2.2.3",
     "postcss-loader": "^1.2.2",
-    "riot": "^3.0.7",
     "riot-hot-reload": "^0.0.2",
     "riot-route": "^3.1.0",
     "riot-tag-loader": "^1.0.0",
