@@ -1,5 +1,8 @@
 # riot-starter
 
+> ## Deprecated in favour of [Poi](https://github.com/egoist/poi)
+
+
 > Webpack2 tooling for building SPA / PWA / offline front-end apps with [Riot](https://riotjs.com) :fire:
 
 Using `riot-starter` will kickstart your next application! :100: It is designed to fit the "90% use-case" for those who want to build offline-first web apps (see [features](#features) below).
@@ -69,4 +72,4 @@ The dashboard is meant to be interactive (scrollable). If you are having issues,
 
 ## License
 
-MIT © [Severan Rye](https://rayraegah.github.io)
+MIT © [Rayraegah](https://rayraegah.github.io)
