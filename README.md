@@ -1,6 +1,6 @@
 # riot-starter
 
-> ## Deprecated in favour of [Poi](https://github.com/egoist/poi)
+## Deprecated in favour of [Poi](https://github.com/egoist/poi)
 
 
 > Webpack2 tooling for building SPA / PWA / offline front-end apps with [Riot](https://riotjs.com) :fire:
